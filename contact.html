@@ -40,16 +40,19 @@
     <a href="mailto:hughesjh98@yahoo.com">Contact me </a>
     </P>
     <!-- CONTACT FORM -->
-    <form action="post" method="post">
+    <form action="post" method="post" id="register-form">
+      <div>
       <label for="contact-email"> email:</label> <br>
       <input type="email" id="contact-email" required>
-      <br>
+      </div>
+      <div>
       <label for="contact-tel">Telephone:</label> <br>
       <input type="tel" id="contact-tel" required>
-      <br>
+      </div>
+      <div>
       <label for="message"> message:</label> <br>
       <textarea name="message" id="message" maxlength="240" required></textarea>
-      <br>
+      </div>
       <input type="submit" value="send message">
     </form>
    </div>
@@ -70,5 +73,6 @@
 
 
 <script src="js/tota11y.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
