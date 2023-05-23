@@ -1,102 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work from Harrison Hughes</title>
+  <title>Work Harrison Hughes</title>
   <link rel="icon" href="./img/icons8-home-64.png">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="CSS/styles.production.css">
 </head>
+
 <body>
   <!-- HEADER & NAV BAR -->
 
   <header class="page-header">
     <img src="img/mountains200x442.png" alt="My name is Harrison Hughes" class="page-header__item">
     <nav class="main-navigation page-header__item">
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation"> <a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
-      <li role="presentation"> <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a></li>
-      <li role="presentation"> <a href="about.html" role="menuitem" class="navigation-list__item">Who am I?</a></li>
-      <li role="presentation"> <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a></li>
-    </ul>
-  </nav>
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation"> <a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
+        <li role="presentation"> <a href="work.html" role="menuitem"
+            class="navigation-list__item navigation-list__item--active">Work</a></li>
+        <li role="presentation"> <a href="about.html" role="menuitem" class="navigation-list__item">Who am I?</a></li>
+        <li role="presentation"> <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a></li>
+      </ul>
+    </nav>
   </header>
- <!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
 
-<section>
-<h1>Work</h1>
-<div class="grid">
-<!-- grid items in here-->
-  <div class="grid__item">
-      <h2>Mobile web app</h2>
-      <p>
-          Within this project, I was responsible for the frontend. It's written in React.js. 
-          Additionally, I've created the HTML and CSS templates.
-      </p>
-      <a href="#">see project on GitHub</a>
-  </div>
-
-  <div class="grid__item">
-    <h2>Mobile web app</h2>
-    <p>
-        Within this project, I was responsible for the frontend. It's written in React.js. 
-        Additionally, I've created the HTML and CSS templates.
-    </p>
-    <a href="#">see project on GitHub</a>
-   </div>
-
-   <div class="grid__item">
-    <h2>Mobile web app</h2>
-    <p>
-        Within this project, I was responsible for the frontend. It's written in React.js. 
-        Additionally, I've created the HTML and CSS templates.
-    </p>
-    <a href="#">see project on GitHub</a>
-    </div>
-
-    <div class="grid__item">
-        <h2>Mobile web app</h2>
+  <section>
+    <h1>Work</h1>
+    <div class="grid">
+      <!-- grid items in here-->
+      <div class="grid__item">
+        <h2>Pokedex</h2>
         <p>
-            Within this project, I was responsible for the frontend. It's written in React.js. 
-            Additionally, I've created the HTML and CSS templates.
+          This project was created using a pokemon api. Users can look at a list of pokemon and find out more
+          information about that pokemon.
+        <h4>tech used</h4>
+        Bootstrap/CSS | HTML | jquery/javascript
         </p>
-        <a href="#">see project on GitHub</a>
-    </div>
+        <a href="https://github.com/hughesjh98/simple-JS-app">project on github</a>
+      </div>
 
-    <div class="grid__item">
-        <h2>Mobile web app</h2>
+      <div class="grid__item">
+        <h2>Movie API</h2>
         <p>
-            Within this project, I was responsible for the frontend. It's written in React.js. 
-            Additionally, I've created the HTML and CSS templates.
+          This api was created to be used as the backend for myFlix.
+          It comes prepared with CRUD operations, JWT and passport.js for authentication, mongoDB and mongoose for
+          storing user information, and CORS for security.
+        <h4>tech used</h4>
+        express.js/node.js | mongoDB/mongoose | HTML | CSS
         </p>
-        <a href="#">see project on GitHub</a>
-    </div>
+        <a href="https://github.com/hughesjh98/movie_api">project on GitHub</a>
+      </div>
 
-    <div class="grid__item">
-        <h2>Mobile web app</h2>
+      <div class="grid__item">
+        <h2>myFlix</h2>
         <p>
-            Within this project, I was responsible for the frontend. It's written in React.js. 
-            Additionally, I've created the HTML and CSS templates.
+          full stack application that users can create an account (hashing the password), discover new movies, update
+          their information, and add/remove a movie from their profile.
+        <h4>tech used</h4>
+        react.js | redux | React-Bootstrap | HTML
         </p>
-        <a href="#">see project on GitHub</a>
+        <a href="https://github.com/hughesjh98/myFlix-client">project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Todo app</h2>
+        <p>
+          A simple Todo app with simple add/delete functions created with jquery.
+        <h4>tech used</h4>
+        jquery/javascript | HTML | CSS
+        </p>
+        <a href="https://github.com/hughesjh98/to-do-list-app">project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Meet</h2>
+        <p>
+          serverless PWA that shows events around the world related to wev development. Since the beginning, test driven
+          development with enzyme, jest-cucumber, and puppeteer helped guide this project.
+          I used 0Auth2 for authentication to calendar api provided by google and AWS lambda functions to communicate
+          with the calendar api.
+        <h4>tech used</h4>
+        react | AWS | HTML | CSS
+        </p>
+        <a href="https://github.com/hughesjh98/meet">project on GitHub</a>
+      </div>
     </div>
-</div>
-</section>
+  </section>
 
 
-<footer class="page-footer">
-  
-  <p>find me on </p>
-  <div class="social-media">
-    <a href="https://github.com/hughesjh98" target="_blank"> <img src="img/github-icon.svg"  alt="GitHub"> </a>
-    <a href="https://www.linkedin.com/in/harrison-hughes-4b0040147/" target="_blank"> <img src="img/linkedin-logo.svg" alt="LinkedIn"> </a>
-  </div>
+  <footer class="page-footer">
+    <p>find me on </p>
+    <div class="social-media">
+      <a href="https://github.com/hughesjh98" target="_blank"> <img src="img/github-icon.svg" alt="GitHub"> </a>
+      <a href="https://www.linkedin.com/in/harrison-hughes-4b0040147/" target="_blank"> <img src="img/linkedin-logo.svg"
+          alt="LinkedIn"> </a>
+    </div>
 
-</footer>
-<script src="js/tota11y.min.js"></script>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
 </body>
-</html>
 
+</html>
