@@ -5,7 +5,7 @@
 #C84630 */
 
 :root {
-  --primary-color: #EEECE1;
+  --primary-color: white;
   --secondary-color: lightgray;
   --text-color: #22181C;
   --active-color: #C84630;
@@ -27,12 +27,12 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
   background-color: var(--primary-color);
+  margin: 25px;
 }
 
 h1 {
   font-size: 30px;
-  font-weight: var(--header-font-weight);
-  padding-left: 25px;
+  font-weight: 400;
 }
 
 h2 {
@@ -48,78 +48,52 @@ h3 {
 
 a {
   color: var(--text-color);
-
+  font-weight: 300;
 }
 
-
-a:hover {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
+p{
+  font-size: 16px;
+  font-weight: 200;
 }
-
-a:visited {
-  /* visited link */
-  color: var(--text-color);
-}
-
-a:active {
-  /* selected link */
-  color: var(--active-color);
-}
-
-a:hover,
-a:focus {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
-}
-
-input,
-texture,
-select,
-button {
-  font-family: system-ui;
-}
-
-button,
-input[type="submit"],
-.button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--button-bg-color);
-  color: var(--text-color);
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid var(--box-shadow);
-  transition: 0.5s;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-  color: var(--secondary-color);
-}
-
-.button__secondary {
-  background-color: var(--button-bg-color);
-  color: var(--text-color);
-}
-
 
 .navigation-list__item--active {
   text-decoration: none;
+  font-weight: 500;
+}
+
+.navigation-list__item {
+  text-decoration: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-size: 18px;
+
+}
+
+#signature{
+  font-family: 'Mr Dafoe', cursive;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 35px;
+  height: 50px;
+}
+
+.page-header__item {
+  flex: 0 1 150px;
+  width: auto;
+  height: auto;
+  
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
 }
 
 .page-footer {
@@ -129,56 +103,26 @@ input[type="submit"]:focus {
   text-align: center;
 }
 
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-  height: 100px;
-}
-
-.page-header__item {
-  flex: 0 1 200px;
-  width: auto;
-  height: auto;
-  margin-right: 5rem;
-}
-
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
-
-.main-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-form {
-  padding-right: 95px;
-}
-
-.navigation-list {
-  list-style-type: none;
-}
-
-.navigation-list li {
-  display: inline-block;
-  margin-left: 10px;
-  font-size: 18px;
-}
 
 .profile {
-  max-width: 700px;
-  margin: 0 auto;
+  margin: 0 20px 0 20px;
+}
+
+.intro-section{
+display: flex;
+justify-content:space-around;
+
+}
+
+.intro-text{
+align-self: center;
+  margin-bottom: 200px;
 }
 
 .profile__portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
+  width: 350px;
+  margin-top: 170px;
+  border-radius: 25px;
 }
 
 .img-wrapper{
@@ -190,6 +134,13 @@ form {
   object-fit:contain;
   max-width: 400px;
   max-height: 400px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .grid {
@@ -211,7 +162,7 @@ form {
   width: 33%;
 }
 
-/* end grid fallback */
+/* end grid fallback  */
 
 @supports (display: grid) {
   .grid {
@@ -257,7 +208,7 @@ form {
   .img-wrapper{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
   }
   
   .work-img{

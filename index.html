@@ -9,21 +9,23 @@
   <link rel="icon" href="./img/icons8-home-64.png">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@200;300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="CSS/styles.production.css">
 </head>
 
 <body>
   <!-- HEADER & NAV BAR -->
-
   <header class="page-header">
-    <img src="img/signature.png" alt="signature" class="page-header__item">
+    <h1 id="signature">H H</h1> 
     <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation"> <a href="index.html" role="menuitem"
             class="navigation-list__item navigation-list__item--active">Home</a></li>
-        <li role="presentation"> <a href="work.html" target="_blank" role="menuitem"
-            class="navigation-list__item">Work</a></li>
+        <!-- <li role="presentation"> <a href="work.html" target="_blank" role="menuitem"
+            class="navigation-list__item">Work</a></li> -->
         <li role="presentation"> <a href="about.html" target="_blank" role="menuitem" class="navigation-list__item">Who
             am I?</a></li>
         <li role="presentation"> <a href="contact.html" target="_blank" role="menuitem"
@@ -33,13 +35,125 @@
   </header>
   <!-- CALL TO ACTION -->
   <main class="profile">
-    <img src="img/harry.JPG" class="profile__portrait" alt="portrait ">
-    <h1>Hello</h1>
-    <p>
-      I'm Harrison Hughes, a web developer from Arizona.
-    </p>
-    <a href="work.html" target="_blank" id="work-examples"> check out some of my code.</a>
+
+    <section class="intro-section">
+      <article class="intro-text">
+        <p>Harrison Hughes-fullstack developer</p>
+        <h1>
+       Web Development made simple.
+        </h1>
+        <a href=""></a>
+      </article>
+
+      <img src="img/Harry.jpeg" class="profile__portrait" alt="portrait ">
+    </section>
+
+
+    <!-- WORK -->
+
+    <section>
+      <h1>Work</h1>
+      <div class="grid">
+        <!-- grid items in here-->
+        <div class="grid__item">
+          <h2>Pokedex</h2>
+          <div class="img-wrapper">
+            <img src="img/pokedex-screenshot.png" alt="pokedex-screenshot" class="work-img">
+          </div>
+          <p>
+            This project was created using a pokemon api. Users can look at a list of pokemon and find out more
+            information about that pokemon.
+          <h3>tech used</h3>
+          Bootstrap/CSS | HTML | jquery/javascript
+          </p>
+          <a href="https://github.com/hughesjh98/simple-JS-app">project on github</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>Movie API</h2>
+          <div class="img-wrapper">
+            <img src="img/movie_api-screenshot.png" alt="movie_api-screenshot" class="work-img">
+          </div>
+          <p>
+            This api was created to be used as the backend for myFlix.
+            It comes prepared with CRUD operations, JWT and passport.js for authentication, mongoDB and mongoose for
+            storing user information, and CORS for security.
+          <h3>tech used</h3>
+          express.js/node.js | mongoDB/mongoose | HTML | CSS
+          </p>
+          <a href="https://movie-dash.herokuapp.com/documentation">API documentation</a>
+          <br>
+          <a href="https://github.com/hughesjh98/movie_api">project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>movie-dash</h2>
+          <div class="img-wrapper">
+            <img src="img/myFlix-React.png" alt="myFlix-React" class="work-img">
+          </div>
+          <p>
+            full stack application that users can create an account (hashing the password), discover new movies, update
+            their information, and add/remove a movie from their profile.
+          <h3>tech used</h3>
+          react.js | redux | React-Bootstrap | HTML
+          </p>
+          <a href="https://movie-dash.netlify.app/login">live website</a>
+          <br>
+          <a href="https://github.com/hughesjh98/myFlix-client">project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>Meet</h2>
+          <div class="img-wrapper">
+            <img src="img/meet-app-screenshot.png" alt="meet-app-screenshot" class="work-img">
+          </div>
+          <p>
+            serverless PWA that shows events around the world related to wev development. Since the beginning, test
+            driven
+            development with enzyme, jest-cucumber, and puppeteer helped guide this project.
+            I used 0Auth2 for authentication to calendar api provided by google and AWS lambda functions to communicate
+            with the calendar api.
+          <h3>tech used</h3>
+          react | AWS | HTML | CSS
+          </p>
+          <a href="https://github.com/hughesjh98/meet">project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>MyFlix v2</h2>
+          <div class="" img-wrapper>
+            <img src="img/myFlix-Angular-screenshot.png" alt="myFlix-Angular-screenshot" class="work-img">
+          </div>
+          <p>
+            full-stack application using my movie RESTful api. this project was made with Angular and Typescript.
+            the main focus on this project is to understand how Angular works.
+          <h3>tech used</h3>
+          Angular | Typescript | HTML | CSS/Angular-Material
+          </p>
+          <a href="https://hughesjh98.github.io/myFlix-Angular-client/welcome"> live website</a>
+          <br>
+          <a href="https://github.com/hughesjh98/MyFlix-Angular-client">project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>Chatter Chat-App</h2>
+          <div class="img-wrapper">
+            <img src="img/chat-app-screenshot.png" alt="chat-app screen-shot" class="work-img">
+          </div>
+          <p>
+            Chat app that lets users send messages, audio, images, and location.
+            the user has to agree for the app to use any of these features.
+            users can send and receive messages in real time
+          <h3>tech used</h3>
+          React-Native | javascript | HTML | CSS | google Firebase
+          </p>
+          <a href="https://github.com/hughesjh98/Chat-App">project on GitHub</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+
   <!--  SOCIAL MEDIA LINKS-->
 
   <footer class="page-footer">
