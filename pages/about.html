@@ -13,8 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@200;300;400;500&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" type="text/css" href="/CSS/styles.production.css">
-  
+
 </head>
 
 <body>
@@ -38,17 +39,17 @@
   <main>
 
     <div class="main-content">
-      <h1>About me</h1>
+      <h1 data-aos="fade-left" data-aos-duration="2000">About me</h1>
 
-      <p>This page is about myself. This is what I enjoy doing:</p>
-      <ul>
+      <p data-aos="fade-right" data-aos-duration="2000">This page is about myself. This is what I enjoy doing:</p>
+      <ul data-aos="fade-left" data-aos-duration="2000">
         <li>Front-end development</li>
         <li>Film Photography</li>
         <li>Drinking vietnamese coffee</li>
         <li>breaking down complex problems</li>
       </ul>
 
-      <a href="files/WEB-DEV-CV..pdf" class="button" download>Download my CV</a>
+      <a href="files/WEB-DEV-CV..pdf" class="button" data-aos="zoom-in" data-aos-duration="2000" download>Download my CV</a>
       <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto"
         viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -1388,7 +1389,10 @@
 
 
 
-  <script src="js/tota11y.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

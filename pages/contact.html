@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@200;300;400;500&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" type="text/css" href="/CSS/styles.production.css">
 
 </head>
@@ -38,12 +39,12 @@
   <main>
 
     <section class="main-content">
-      <h1>Contact</h1>
-      <P> Harrison Hughes
+      <h1 data-aos="fade-left" data-aos-duration="1000">Contact</h1>
+      <P data-aos="fade-right" data-aos-duration="1000"> Harrison Hughes
         <br>
         Ho Chi Minh City,Viet Nam
         <br>
-        <a href="mailto:hughesjh98@yahoo.com">hughesjh98@yahoo.com</a>
+        <a href="mailto:hughesjh98@yahoo.com" >hughesjh98@yahoo.com</a>
         <br>
         <a href="mailto:hughesjh98@yahoo.com">Contact me </a>
       </P>
@@ -51,7 +52,7 @@
   </main>
 
   <!-- SOCIAL MEDIA LINKS -->
-  <footer class="page-footer">
+  <footer class="page-footer" data-aos="zoom-in" data-aos-duration="2000">
     <p>
       find me on
     </p>
@@ -65,8 +66,10 @@
 
 
 
-  <script src="/js/tota11y.min.js"></script>
-  <script src="/js/scripts.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
