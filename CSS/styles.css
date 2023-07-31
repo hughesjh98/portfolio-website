@@ -125,6 +125,10 @@ align-self: center;
   border-radius: 25px;
 }
 
+.work-section{
+  margin: 100px 0px 0px 0px;
+}
+
 .img-wrapper{
   display: flex;
   align-items: center;
