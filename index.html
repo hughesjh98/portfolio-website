@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@200;300;400;500&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" type="text/css" href="CSS/styles.production.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
 
 <body>
@@ -25,11 +25,16 @@
       <ul role="menubar" class="navigation-list">
         <li role="presentation"> <a href="index.html" role="menuitem"
             class="navigation-list__item navigation-list__item--active">Home</a></li>
-        <li role="presentation"> <a href="about.html" target="_blank" role="menuitem"
-            class="navigation-list__item">Who am I?</a></li>
+        <li role="presentation"> <a href="about.html" target="_blank" role="menuitem" class="navigation-list__item">Who
+            am I?</a></li>
         <li role="presentation"> <a href="contact.html" target="_blank" role="menuitem"
             class="navigation-list__item">Contact</a></li>
       </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
   </header>
   <!-- CALL TO ACTION -->
@@ -42,17 +47,114 @@
           Web Development made simple.
         </h1>
       </article>
-
       <img src="img/Harry.jpeg" class="profile__portrait" alt="portrait" data-aos="fade-up" data-aos-duration="2000">
     </section>
 
-
     <!-- WORK -->
+    <h1>Recent projects</h1>
 
-    <section class="work-section">
+    <section class="project-section" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+      <article class="project-wrapper">
+        <h2>MyFlix v2</h2>
+        <p>
+          full-stack application using my movie RESTful api. this project was made with Angular and Typescript.
+          the main focus on this project is to understand how Angular works.
+        </p>
+        <h3>Tools</h3>
+        <p>Angular | Typescript | HTML | CSS/Angular-Material</p>
+        <a href="https://hughesjh98.github.io/myFlix-Angular-client/welcome"> live website</a>
+        <br>
+        <a href="https://github.com/hughesjh98/MyFlix-Angular-client">project on GitHub</a>
+      </article>
+      <img src="img/myFlix-Angular-screenshot.png" alt="myFLix-Angular-screenshot" class="project-img">
+    </section>
+
+    <section class="project-section-v2" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+      <article class="project-wrapper-v2">
+        <h2>Chat-App</h2>
+        <p>
+          Chat app that lets users send messages, audio, images, and location.
+          the user has to agree for the app to use any of these features.
+          users can send and receive messages in real time.
+        </p>
+        <h3>Tools</h3>
+        <p> React-Native | javascript | HTML | CSS | google Firebase </p>
+        <a href="https://github.com/hughesjh98/Chat-App">project on github</a>
+      </article>
+      <img src="img/chat-app-screenshot.png" alt="pokedex-screenshot" class="project-img">
+    </section>
+
+    <section class="project-section" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+      <article class="project-wrapper">
+        <h2>Meet</h2>
+        <p>
+          serverless PWA that shows events around the world related to wev development. Since the beginning, test
+          driven development with enzyme, jest-cucumber, and puppeteer helped guide this project.
+          I used 0Auth2 for authentication to calendar api provided by google and AWS lambda functions to communicate
+          with the calendar api.
+        </p>
+        <h3>Tools</h3>
+        <p> react | AWS | HTML | CSS </p>
+        <a href="https://github.com/hughesjh98/meet">project on GitHub</a>
+      </article>
+      <img src="img/meet-app-screenshot.png" alt="meet-app-screenshot" class="project-img">
+    </section>
+
+    <section class="project-section-v2" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+      <article class="project-wrapper-v2">
+        <h2>Movie API</h2>
+        <p>
+          This api was created to be used as the backend for myFlix.
+          It comes prepared with CRUD operations, JWT and passport.js for authentication, mongoDB and mongoose for
+          storing user information, and CORS for security.
+        </p>
+        <h3>Tools</h3>
+        <p> React-Native | javascript | HTML | CSS | google Firebase </p>
+        <a href="https://movie-dash.herokuapp.com/documentation">API documentation</a>
+        <br>
+        <a href="https://github.com/hughesjh98/movie_api">project on GitHub</a>
+      </article>
+      <img src="img/movie_api-screenshot.png" alt="movie_api-screenshot" class="project-img">
+    </section>
+
+    <section class="project-section" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+      <article class="project-wrapper">
+        <h2>movie-dash</h2>
+        <p>
+          full stack application that users can create an account (hashing the password), discover new movies, update
+          their information, and add/remove a movie from their profile.
+        </p>
+        <h3>Tools</h3>
+        <p> react.js | redux | React-Bootstrap | HTML </p>
+        <a href="https://movie-dash.netlify.app/login">live website</a>
+        <br>
+        <a href="https://github.com/hughesjh98/myFlix-client">project on GitHub</a>
+      </article>
+      <img src="img/myFlix-React.png" alt="myFlix-React-screenshot" class="project-img">
+    </section>
+
+    <section class="project-section-v2" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+      <article class="project-wrapper-v2">
+        <h2>Pokedex</h2>
+        <p>
+          This project was created using a pokemon api. Users can look at a list of pokemon and find out more
+          information about that pokemon.
+        </p>
+        <h3>Tools</h3>
+        <p> Bootstrap/CSS | HTML | jquery/javascript </p>
+        <a href="https://github.com/hughesjh98/simple-JS-app">project on github</a>
+        <br>
+        <a href="https://hughesjh98.github.io/simple-JS-app/">live website</a>
+      </article>
+      <img src="img/pokedex-screenshot.png" alt="pokedex-screenshot" class="project-img">
+
+    </section>
+
+
+
+    <!-- <section class="work-section">
       <h1>Work</h1>
       <div class="grid">
-        <!-- grid items in here-->
         <div class="grid__item" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
           <h2>Pokedex</h2>
           <div class="img-wrapper">
@@ -148,7 +250,7 @@
           <a href="https://github.com/hughesjh98/Chat-App">project on GitHub</a>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 
 
@@ -158,8 +260,8 @@
     <p>find me on </p>
     <section class="social-media">
       <a href="https://github.com/hughesjh98" target="_blank"> <img src="img/github-icon.svg" alt="GitHub"> </a>
-      <a href="https://www.linkedin.com/in/harrison-hughes-4b0040147/" target="_blank"> <img
-          src="img/linkedin-logo.svg" alt="LinkedIn"> </a>
+      <a href="https://www.linkedin.com/in/harrison-hughes-4b0040147/" target="_blank"> <img src="img/linkedin-logo.svg"
+          alt="LinkedIn"> </a>
     </section>
   </footer>
 
@@ -167,6 +269,7 @@
   <script>
     AOS.init();
   </script>
+  <script src="js/scripts.js"></script>
 
 </body>
 
