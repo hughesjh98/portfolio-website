@@ -83,6 +83,7 @@ p{
 
 #signature{
   font-family: 'Mr Dafoe', cursive;
+  cursor: pointer;
 }
 
 .page-header {
